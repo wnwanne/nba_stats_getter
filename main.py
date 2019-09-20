@@ -50,10 +50,12 @@ team_stats = games_1819.mean()
 team_name = games_1819['TEAM_NAME'].to_list()[0]
 
 # Twilio access tokens used to send SMS
-acc_sid = 'AC2419cae3c28175a847a4b9b7d539d140'
-auth_token = 'b849044161a5e8ce89f968f0a29743f9'
+# ADD AUTHENTICATION
+# *******************************************
+acc_sid = ''
+auth_token = ''
 client = Client(acc_sid, auth_token)
-
+# *******************************************
 # SMS message sent
 Message = 'SEASON STATS: Team Name: {}, Minutes Played: {}, PTS: {}, FGM: {}, FGA: {}, ' \
           'FG_PCT {}, FG3M {}, FG3A {}, FG3_PCT {}, FTM {}, FTA {}, FT_PCT {}, OREB {}, DREB {}, REB {}, AST {}, ' \
