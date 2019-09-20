@@ -12,8 +12,8 @@ f = open('team_short_names', 'r')
 for line in f:
     team_list.append(line.strip('\n'))
 
-fav_short_team = input('Please input you favorite team short-name: i.e) Boston Celtics = Bos '
-                       'Los Angeles Lakers = LAL').upper()
+fav_short_team = input('Please input you favorite team short-name (Boston Celtics = Bos '
+                       'Los Angeles Lakers = LAL): ').upper()
 
 if fav_short_team not in team_list:
     fav_short_team = input('Error! please enter a valid NBA team short-name: ').upper()
