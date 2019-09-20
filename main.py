@@ -78,7 +78,9 @@ Message = 'SEASON STATS: Team Name: {}, Minutes Played: {}, PTS: {}, FGM: {}, FG
                                                                 round(team_stats['PF'], 2),
                                                                 round(team_stats['PLUS_MINUS'], 2))
 
-message = client.messages.create(to='2019236315',
+registered_number = input('Enter your registered phone number (all digits no spaces): ')
+
+message = client.messages.create(to=registered_number,
                                  from_='8622256658',
                                  body=Message)
 print('Check you phone!')
