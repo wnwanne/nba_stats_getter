@@ -6,6 +6,7 @@ import numpy as np
 from twilio.rest import Client
 import logging
 import requests
+import os
 
 team_list = []
 f = open('team_short_names', 'r')
@@ -52,8 +53,8 @@ team_name = games_1819['TEAM_NAME'].to_list()[0]
 # Twilio access tokens used to send SMS
 # ADD AUTHENTICATION
 # *******************************************
-acc_sid = ''
-auth_token = ''
+acc_sid = os.environ['ACC_SID']
+auth_token = os.environ['AUTH_TOKEN']
 client = Client(acc_sid, auth_token)
 # *******************************************
 # SMS message sent
